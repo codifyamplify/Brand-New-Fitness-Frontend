@@ -1,2 +1,2 @@
-COMMIT PLAN = import {Link} from 'react-router-dom'
-COMMIT MESSAGE = "import link module to Navbar component"
+COMMIT PLAN = add Links to Navbar, for home list form components
+COMMIT MESSAGE = "adding Links to Navbar, for home list form components"
