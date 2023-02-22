@@ -11,11 +11,17 @@ function App() {
   
   return (
     <div className="App">
-      <Form />
-      <Home />
-      <List />
+      {/* <Form /> */}
+      {/* <Home /> */}
+      {/* <List /> */}
+      {/* <Navbar /> */}
+      {/* <Card /> */}
       <Navbar />
-      <Card />
+      <Routes>
+        <Route path='/home' element={<Home />} />
+        <Route path='/form' element={<Form />} />
+        <Route path='/list' element={<List />} />
+      </Routes>
     </div>
   );
 }
