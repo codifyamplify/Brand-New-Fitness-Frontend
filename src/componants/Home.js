@@ -1,6 +1,7 @@
 import React from "react"
 
 const Home = () => {
+    console.log("hello from home")
     return (
         <div>
             <h1>Welcome Home!</h1>

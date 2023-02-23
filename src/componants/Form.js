@@ -1,6 +1,7 @@
 import React from "react"
 // 
 const Form = () => {
+console.log("hello from form")
     return (
         <div>
             <h1>Form Component</h1>

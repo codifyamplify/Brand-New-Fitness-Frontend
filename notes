@@ -1,2 +1,2 @@
 COMMIT PLAN = 
-COMMIT MESSAGE = "building list component structure, add state later"
+COMMIT MESSAGE = "add useEffect, create users state, write GET request, in app.js"

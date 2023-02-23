@@ -3,6 +3,7 @@ import Card from "./Card"
 // will need data from state, iterate over that data and create <Card /> components for each entry
 
 const List = () => {
+    console.log("hello from list")
     return (
         <div>
             <h1>List Component</h1>
