@@ -1,2 +1,2 @@
-COMMIT PLAN = add Links to Navbar, for home list form components
-COMMIT MESSAGE = "adding Links to Navbar, for home list form components"
+COMMIT PLAN = build Card component structure, worry about state later
+COMMIT MESSAGE = "build Card component structure, worry about state later"

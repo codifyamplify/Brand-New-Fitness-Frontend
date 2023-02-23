@@ -1,6 +1,7 @@
 
 import {Routes, Route} from 'react-router-dom'
-import Card from "./componants/Card"
+// import Card from "./componants/Card"
+// not used here
 import Form from './componants/Form'
 import Home from './componants/Home'
 import List from './componants/List'
