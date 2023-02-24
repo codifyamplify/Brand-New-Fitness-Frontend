@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react"
+import React from "react"
 import {Routes, Route} from 'react-router-dom'
 import { UserProvider } from "./componants/context/user"
 // import Card from "./componants/Card"
@@ -11,7 +11,7 @@ import Navbar from './componants/Navbar'
 
 
 function App() {
-  console.log("hello from app")
+  console.log("inside app")
 // debugger
   // create users state
   // const [users, setUsers] = useState([]) // this will be handled in context now

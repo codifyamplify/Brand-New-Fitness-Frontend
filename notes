@@ -1,4 +1,4 @@
-// COMMIT PLAN = create UserContext component to build a useContext file
+// COMMIT PLAN = move initial fetch request to contect file, and test context passing
 // COMMIT MESSAGE = ""
 
 
