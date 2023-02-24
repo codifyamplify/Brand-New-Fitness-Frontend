@@ -1,2 +1,9 @@
-COMMIT PLAN = 
-COMMIT MESSAGE = "add useEffect, create users state, write GET request, in app.js"
+// COMMIT PLAN = create UserContext component to build a useContext file
+// COMMIT MESSAGE = ""
+
+
+// consider adding:
+//     - dynamic Routes
+//         - this will require a User component so a single page of a single user and their data can be displayed
+//         - this will use useParams
+//     - add any form of useContext to pass params through provider
