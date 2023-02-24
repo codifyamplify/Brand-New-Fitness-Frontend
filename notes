@@ -1,4 +1,4 @@
-// COMMIT PLAN = switch from useContext to composition, starting in Card.js
+// COMMIT PLAN = add delete button to card, explore connecting delete fetch
 // COMMIT MESSAGE = ""
 
 

@@ -2,10 +2,16 @@ import React from "react"
 // import { UserContext } from "./context/user"
 // will require some sort of user state data (assmuing exercise data will come with the association)
 const Card = ({user}) => {
-    // import context and store in variable
+    function handleDeleteClick(){
+        fetch(`http://localhost:9292/users/${user.id}`, {
+            method: "DELETE",
+        })
+        .then((resp) => resp.json())
+        .then((deletedUser) => onDeleteUser(deletedUser))
+    }
+    // import context and store in variable\
     // const data = useContext(UserContext)
-    const { name, exercises } = user
-console.log(exercises)
+    const name = user.name
 
     const exercisesList = user.exercises.map(exercise => <li>
         Name: {exercise.name},<br></br>
@@ -23,7 +29,7 @@ console.log(exercises)
             <h2>{name}</h2>
             <h3>Exercises:</h3>
             <h5>{exercisesList}</h5>
-            {/* <h5>{JSON.stringify(exercises)}</h5> */}
+            <button >delete user</button>
         </div>
     )
 }

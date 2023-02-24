@@ -8,6 +8,7 @@ console.log("hello from form")
     return (
         <div>
             <h1>Form Component</h1>
+            <h4>here we will create a new user</h4>
             {/* <h5>{JSON.stringify(data)}</h5> */}
         </div>
     )
