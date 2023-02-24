@@ -12,6 +12,7 @@ import Navbar from './componants/Navbar'
 
 function App() {
   console.log("inside app")
+  
 // debugger
   // create users state
   // const [users, setUsers] = useState([]) // this will be handled in context now

@@ -6,11 +6,14 @@ import { UserContext } from "./context/user"
 const List = () => {
     const user = useContext(UserContext)
     console.log("hello from list")
+    console.log(JSON.stringify(user))
     console.log(user)
     // console.log({users})
     return (
         <div>
             <h1>List Component</h1>
+            <h5>try stringify here</h5>
+            <h5>{JSON.stringify(user)}</h5>
             <ul>
                 {/* here we will use data from state or props and iterate over it all and create a card component for each entry */}
                 <Card />
