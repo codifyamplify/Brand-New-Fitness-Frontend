@@ -1,19 +1,29 @@
-import React, {useContext} from "react"
-import { UserContext } from "./context/user"
+import React from "react"
+// import { UserContext } from "./context/user"
 // will require some sort of user state data (assmuing exercise data will come with the association)
-const Card = () => {
+const Card = ({user}) => {
     // import context and store in variable
-    const data = useContext(UserContext)
+    // const data = useContext(UserContext)
+    const { name, exercises } = user
+console.log(exercises)
+
+    const exercisesList = user.exercises.map(exercise => <li>
+        Name: {exercise.name},<br></br>
+        Muscle Group: {exercise.muscle_group},<br></br>
+        Weight: {exercise.weight},<br></br>
+        Sets: {exercise.sets}, <br></br>
+        Reps: {exercise.reps},<br></br>
+        Rest: {exercise.rest}
+        </li>)
     console.log("inside Card")
-    console.log(data)
+    // console.log(user)
     return (
-        <div>
-            <h1>This is a user card</h1>
-            <h2>USER NAME STATE</h2>
-            <h3>USER EXERCISES STATE</h3>
-            <h4>maybe will have to iterate over exercises array (inside card component) to list them all</h4>
-            <h4>will need an unordered list for this</h4>
-            <h5>{JSON.stringify(data)}</h5>
+        <div className="Card">
+            <h1>User Name:</h1>
+            <h2>{name}</h2>
+            <h3>Exercises:</h3>
+            <h5>{exercisesList}</h5>
+            {/* <h5>{JSON.stringify(exercises)}</h5> */}
         </div>
     )
 }

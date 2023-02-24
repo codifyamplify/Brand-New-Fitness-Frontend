@@ -1,4 +1,4 @@
-// COMMIT PLAN = Import context into all components and test with JSON.stringify
+// COMMIT PLAN = switch from useContext to composition, starting in Card.js
 // COMMIT MESSAGE = ""
 
 

@@ -1,22 +1,23 @@
-import React, { useContext } from "react"
+import React from "react"
 import Card from "./Card"
-import { UserContext } from "./context/user"
+// import { UserContext } from "./context/user"
 // will need data from state, iterate over that data and create <Card /> components for each entry
 
-const List = () => {
-    const user = useContext(UserContext)
+const List = ({users}) => {
+    // const users = useContext(UserContext)
+    // const [user, setUser]
     console.log("hello from list")
-    console.log(JSON.stringify(user))
-    console.log(user)
-    // console.log({users})
+    // console.log(JSON.stringify(user))
+    // console.log(users)
+    // Create users, map, and store invariable
+    const userCards = users.map(user => <Card key={user.id} user={user}/>)
     return (
         <div>
             <h1>List Component</h1>
-            <h5>try stringify here</h5>
-            <h5>{JSON.stringify(user)}</h5>
+            {/* <h5>try stringify here</h5> */}
+            {/* <h5>{JSON.stringify(user)}</h5> */}
             <ul>
-                {/* here we will use data from state or props and iterate over it all and create a card component for each entry */}
-                <Card />
+                {userCards}
             </ul>
         </div>
     )
